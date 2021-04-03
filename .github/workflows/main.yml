@@ -28,11 +28,10 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        git submodule init
-        git submodule update
+        git clone https://GMahmoud@github.com/GMahmoud/stats.git stats
         cd stats
-        git checkout master
         cp -r generated ..
+        rm -rf stats
         git add .
         git commit -m 'Update generated files' || echo
         git push
