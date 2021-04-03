@@ -19,13 +19,15 @@ jobs:
     steps:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
+      with:
+        repository: GMahmoud/stats
+        token: ${{ secrets.ACCESS_TOKEN }}
     
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
       run: |
-        git config --global user.name "GMahmoud/stats"
+        git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        git clone "https://${{ secrets.GITHUB_TOKEN }}@github.com/GMahmoud/stats.git" test
         git submodule init
         git submodule update
         cd stats
