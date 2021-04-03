@@ -25,13 +25,14 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        git clone https://github.com/GMahmoud/stats.git
-        cp -r stats/generated .
-        rm -rf stats
+        git submodule init
+        git submodule update
+        cd stats
+        git checkout master
+        cp -r generated ..
         git add .
         git commit -m 'Update generated files' || echo
         git push
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
