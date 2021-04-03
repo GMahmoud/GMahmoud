@@ -32,7 +32,6 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        ls stats
         rm -rf generated
         cp -r stats/generated .
         rm stats -rf
