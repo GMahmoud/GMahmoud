@@ -23,7 +23,7 @@ jobs:
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
       run: |
-        git config --global user.name "GMahmoud/GMahmoud"
+        git config --global user.name "GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
         git submodule init
         git submodule update
