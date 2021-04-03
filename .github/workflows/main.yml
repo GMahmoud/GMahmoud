@@ -38,3 +38,6 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        repository: GMahmoud/stats
+        token: ${{ secrets.ACCESS_TOKEN }}
