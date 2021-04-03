@@ -23,7 +23,7 @@ jobs:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
       with:
-        path: ~/stats
+        path: stats
         repository: GMahmoud/stats
         token: ${{ secrets.ACCESS_TOKEN }}
     
@@ -32,7 +32,7 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        ls ~/stats
+        ls stats
         rm -rf generated
         cp -r $GITHUB_WORKSPACE/generated .
         git add .
