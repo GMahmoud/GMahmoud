@@ -6,4 +6,7 @@
 
 Robotics **|** Navigation **|** Reinforcement learning **|** Computer science
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=GMahmoud&show_icons=true&icon_color=ff79e1&title_color=333&text_color=777&count_private=true&include_all_commits=true)
+<!-- ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=GMahmoud&show_icons=true&icon_color=ff79e1&title_color=333&text_color=777&count_private=true&include_all_commits=true) -->
+
+![](https://github.com/GMahmoud/stats/blob/master/generated/overview.svg)
+![](https://github.com/GMahmoud/stats/blob/master/generated/languages.svg)
