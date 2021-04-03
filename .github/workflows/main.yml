@@ -32,7 +32,7 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        ls
+        ls ~/stats
         rm -rf generated
         cp -r $GITHUB_WORKSPACE/generated .
         git add .
