@@ -25,7 +25,7 @@ jobs:
       run: |
         git config --global user.name "GMahmoud/stats"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        git clone "https://$GITHUB\_TOKEN@github.com/GMahmoud/stats.git" /test
+        git clone "https://$GITHUB\_TOKEN@github.com/GMahmoud/stats.git" test
         git submodule init
         git submodule update
         cd stats
