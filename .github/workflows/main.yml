@@ -26,13 +26,9 @@ jobs:
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
       run: |
-        ls $GITHUB_WORKSPACE
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
-        git clone git@github.com:GMahmoud/stats.git stats
-        cd stats
-        cp -r generated ..
-        rm -rf stats
+        cp -r $GITHUB_WORKSPACE/generated .
         git add .
         git commit -m 'Update generated files' || echo
         git push
