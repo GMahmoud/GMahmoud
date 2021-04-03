@@ -18,7 +18,7 @@ jobs:
     # Sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         repository: GMahmoud/stats
         token: ${{ secrets.ACCESS_TOKEN }}
@@ -26,6 +26,7 @@ jobs:
     # Push generated stats to GMahmoud
     - name: Get generated stats to profile repo
       run: |
+        ls $GITHUB_WORKSPACE
         git config --global user.name "GMahmoud/GMahmoud"
         git config --global user.email "mahmoud.ghorbel@hotmail.com"  
         git clone git@github.com:GMahmoud/stats.git stats
