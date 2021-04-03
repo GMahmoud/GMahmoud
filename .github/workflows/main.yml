@@ -19,7 +19,11 @@ jobs:
     steps:
     # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v2
+
+    # Checks-out repository under $GITHUB_WORKSPACE, so the job can access it
+    - uses: actions/checkout@v2
       with:
+        path: ~/stats
         repository: GMahmoud/stats
         token: ${{ secrets.ACCESS_TOKEN }}
     
