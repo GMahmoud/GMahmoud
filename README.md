@@ -8,5 +8,5 @@ Robotics **|** Navigation **|** Reinforcement learning **|** Computer science
 
 <!-- ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=GMahmoud&show_icons=true&icon_color=ff79e1&title_color=333&text_color=777&count_private=true&include_all_commits=true) -->
 
-![](generated/overview.svg)
-![](generated/languages.svg)
+![](https://github.com/GMahmoud/GMahmoud/blob/master/generated/overview.svg)
+![](https://github.com/GMahmoud/GMahmoud/blob/master/generated/languages.svg)
